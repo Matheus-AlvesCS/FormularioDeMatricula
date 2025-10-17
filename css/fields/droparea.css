@@ -1,0 +1,39 @@
+.dropzone {
+  border: 2px dashed transparent;
+  outline: 1px solid var(--stroke-default);
+  border-radius: 0.5rem;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  position: relative;
+
+  & input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    cursor: pointer;
+  }
+
+  & p {
+    color: #a8a29e;
+  }
+
+  &:hover,
+  &:focus-within {
+    outline-width: 0;
+    border-color: var(--stroke-highlight);
+    background-color: var(--surface-secondary);
+
+    & p {
+      color: var(--text-tertiary);
+    }
+
+    & > svg path {
+      stroke: var(--stroke-highlight);
+    }
+  }
+}

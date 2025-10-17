@@ -2,12 +2,11 @@
   display: grid;
   grid-template-rows: 0.5fr 1fr;
   height: 100dvh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 main {
   padding: 1.5rem;
-  overflow: auto;
   order: 2;
 
   & .back {
